@@ -10,7 +10,7 @@ function TicketInformationCard() {
         <p>50€</p>
         <section>
             <label htmlFor="ticket">Tickets</label>
-            <input type="number" name="ticket" />
+            <input type="number" id="ticket" />
             <LargeButton buttonText={'Add to cart'}/>
         </section>
         </>
