@@ -1,11 +1,11 @@
 import AttractionImg from "./AttractionImg";
 import AttractionInfoText from "./AttractionInfoText";
 
-function AttractionInfoCard() {
+function AttractionInfoCard({titleText, bodyText, image}) {
     return ( 
         <>
-        <AttractionInfoText/>
-        <AttractionImg/>
+        <AttractionInfoText titleText={titleText} bodyText={bodyText}/>
+        <AttractionImg image={image}/>
         </>
      );
 }

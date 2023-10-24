@@ -1,7 +1,10 @@
+import MenuButton from "../components/MenuButton";
+
 function TicketPage() {
     return ( 
         <>
-        <h2>jdlkajflkkwajkl</h2>
+        <MenuButton/>
+        <h1>Tickets</h1>
         </>
      );
 }

@@ -1,4 +1,4 @@
-function AttractionImg() {
+function AttractionImg({image}) {
     return ( 
         <>
         <section>

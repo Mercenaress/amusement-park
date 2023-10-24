@@ -1,4 +1,4 @@
-function AttractionInfoText() {
+function AttractionInfoText({titleText, bodyText}) {
     return ( 
         <>
         <section>
