@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;600;700&display=swap');
+
+// Primary colors
+$black: #000;
+$white: #FFF;
+$forestGreen: #2C6E49;
+$marzipanGreen: #4C956C;
+$primaryYellow: #FEFEE3;
+$backdropBlue: #eaf9ff;
+
+// Secondary colors used in svg
+$red: #FFCFD2;
+$orange: #FDE4CF;
+$yellow: #FBF8CC;
+$green: #98F5E1;
+$blue: #8EECF5;
+$indigo: #A3C4F3;
+$purple: #CFBAF0;
+$pink: #F1C0E8;
+
+// Font
+$font: 'Kodchasan';
+
+@mixin page-titles {
+    font-family: $font;
+    color: $black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@mixin center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin round-button-styles {
+    background-color: $primaryYellow;
+    border: solid 3px $forestGreen;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}

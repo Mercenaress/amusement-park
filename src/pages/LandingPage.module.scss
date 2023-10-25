@@ -1,0 +1,25 @@
+@import '../variables/Variables.scss';
+
+body {
+    background-color: $backdropBlue;
+}
+
+.headingWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pageTitle {
+    @include page-titles;
+    margin-top: 0;
+}
+
+.ferrisWheelWrap {
+    @include center-flex;
+    margin: 5rem 0 0 0;
+}
+
+.ferrisBase {
+    position: absolute;
+    top: 420px;
+}

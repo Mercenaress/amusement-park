@@ -1,0 +1,9 @@
+@import '../variables/Variables.scss';
+
+.menuButton {
+    @include center-flex;
+    @include round-button-styles;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}

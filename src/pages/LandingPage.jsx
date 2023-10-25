@@ -1,17 +1,18 @@
 import MenuButton from "../components/MenuButton";
 import FerrisWheel from "../components/FerrisWheel";
 import FerrisBase from "../assets/ferris-base.svg";
+import style from "./LandingPage.module.scss";
 
 function LandingPage() {
     return ( 
         <>
-        <section>
+        <section className={style.headingWrapper} >
             <MenuButton/>
-            <h1>Amusement Park</h1>
+            <h1 className={style.pageTitle}>Amusement Park</h1>
         </section>
-        <section>
+        <section className={style.ferrisWheelWrap}>
             <FerrisWheel/>
-            <img src={FerrisBase} alt="" />
+            <img className={style.ferrisBase} src={FerrisBase} alt="" />
         </section>
         </>
      );
