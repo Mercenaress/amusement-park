@@ -5,16 +5,22 @@
 }
 
 .imgBackdrop {
-    width: 400px;
-    height: 300px;
+    width: 420px;
+    height: 320px;
     background-color: $forestGreen;
+    opacity: 0.7;
     position: absolute;
+    transform: rotate(10deg);
 }
 
 .imageContainer {
-    width: 380px;
-    height: 280px;
+    width: 400px;
+    height: 300px;
     position: relative;
     margin: 2rem;
-    box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+.imageContainer img {
+    min-width: 100%;
 }

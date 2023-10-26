@@ -6,7 +6,7 @@ function AttractionImg({image}) {
         <section className={style.imgCard}>
             <div className={style.imgBackdrop}></div>
             <div className={style.imageContainer}>
-                <img className={style.image} src={image} alt="" />
+                <img src={image} alt="" />
             </div>
         </section>
         </>

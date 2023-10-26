@@ -1,0 +1,29 @@
+@import '../variables/Variables.scss';
+
+.infoTextWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+.infoTitle {
+    font-family: $font;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.infoBody {
+    font-family: $font;
+}
+
+.infoButton {
+    background-color: $primaryYellow;
+    border: solid 3px $forestGreen;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.5);
+    font-family: $font;
+    font-weight: 600;
+    padding: 0.5rem;
+}
