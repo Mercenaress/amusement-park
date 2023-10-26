@@ -1,8 +1,13 @@
+import style from "./AttractionImg.module.scss"
+
 function AttractionImg({image}) {
     return ( 
         <>
-        <section>
-            <img src={image} alt="" />
+        <section className={style.imgCard}>
+            <div className={style.imgBackdrop}></div>
+            <div className={style.imageContainer}>
+                <img className={style.image} src={image} alt="" />
+            </div>
         </section>
         </>
      );
