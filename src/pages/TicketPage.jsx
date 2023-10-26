@@ -1,10 +1,10 @@
-import MenuButton from "../components/MenuButton";
+import DropMenu from "../components/DropMenu";
 import TicketCard from "../components/TicketCard";
 
 function TicketPage() {
     return ( 
         <>
-        <MenuButton/>
+        <DropMenu/>
         <h1>Tickets</h1>
         <TicketCard/>
         </>

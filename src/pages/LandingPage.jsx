@@ -1,4 +1,3 @@
-import MenuButton from "../components/MenuButton";
 import FerrisWheel from "../components/FerrisWheel";
 import FerrisBase from "../assets/ferris-base.svg";
 import style from "./LandingPage.module.scss";

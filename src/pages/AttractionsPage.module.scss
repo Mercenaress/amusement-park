@@ -1,0 +1,10 @@
+@import '../variables/Variables.scss';
+
+.pageTitle {
+    @include page-titles;
+}
+
+.infoCardWrapper {
+    @include center-flex;
+    flex-direction: column;
+}

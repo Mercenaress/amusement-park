@@ -4,14 +4,8 @@ body {
     background-color: $backdropBlue;
 }
 
-.headingWrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .pageTitle {
     @include page-titles;
-    margin-top: 0;
 }
 
 .ferrisWheelWrap {

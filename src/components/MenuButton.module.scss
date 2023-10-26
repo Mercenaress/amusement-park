@@ -4,6 +4,7 @@
     @include center-flex;
     @include round-button-styles;
     position: absolute;
+    z-index: 1;
     left: 20px;
     top: 20px;
 }
