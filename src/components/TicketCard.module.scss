@@ -1,0 +1,14 @@
+@import '../variables/Variables.scss';
+
+.ticketsCard {
+    background-color: $marzipanGreen;
+    width: 950px;
+    padding: 2rem;
+    border-radius: 50px;
+    margin: 2rem;
+}
+
+.ticketOptionsInfoWrap {
+    display: flex;
+    justify-content: space-between;
+}

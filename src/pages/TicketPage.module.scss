@@ -1,0 +1,9 @@
+@import '../variables/Variables.scss';
+
+.pageTitle {
+    @include page-titles;
+}
+
+.ticketCardWrap {
+    @include center-flex;
+}
