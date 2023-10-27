@@ -1,2 +1,27 @@
 @import '../variables/Variables.scss';
 
+.ticketOptionWrap {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primaryYellow;
+    border-radius: 10px;
+    border: solid 3px $forestGreen;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.optionTitle {
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+
+.optionBody {
+    margin: .5rem;
+}
+
+.optionPrice {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: .5rem;
+}

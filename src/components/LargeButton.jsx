@@ -1,6 +1,8 @@
+import style from "./LargeButton.module.scss"
+
 function LargeButton({buttonText}) {
     return ( 
-        <button>{buttonText}</button>
+        <button className={style.largeButton}>{buttonText}</button>
      );
 }
 

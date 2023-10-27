@@ -6,7 +6,7 @@ import style from "./TicketCard.module.scss";
 function TicketCard() {
     return ( 
         <article className={style.ticketsCard}>
-            <button><img src={cartIcon} alt="" /></button>
+            <button className={style.cartButton}><img src={cartIcon} alt="" /></button>
             <section className={style.ticketOptionsInfoWrap}>
                 <section>
                     <TicketOptions titleText={'Entrance'} bodyText={'Entrance to the park'} price={"25"}/>

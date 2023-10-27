@@ -1,0 +1,13 @@
+@import '../variables/Variables.scss';
+
+.largeButton {
+    background-color: $forestGreen;
+    border: solid 3px $marzipanGreen;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    font-size: 1.5rem;
+    color: $white;
+    font-weight: 600;
+    margin: 0.5rem 2rem;
+    padding: 1rem;
+}

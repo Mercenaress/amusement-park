@@ -1,11 +1,13 @@
+import style from "./TicketOptions.module.scss";
+
 function TicketOptions({titleText, bodyText, price}) {
     return ( 
-        <article>
+        <article className={style.ticketOptionWrap}>
             <section>
-                <h5>{titleText}</h5>
-                <p>{bodyText}</p>
+                <h4 className={style.optionTitle}>{titleText}</h4>
+                <p className={style.optionBody}>{bodyText}</p>
             </section>
-            <p>{price}€</p>
+            <p className={style.optionPrice}>{price}€</p>
         </article>
      );
 }

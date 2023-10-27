@@ -1,16 +1,21 @@
 import LargeButton from "./LargeButton";
+import style from "./TicketInformationCard.module.scss"
 
 function TicketInformationCard() {
     return ( 
-        <article>
+        <article className={style.ticketInformationWrap}>
             <section>
-                <h5>Day pass</h5>
-                <p>Entry + Free rides on all attractions. Valid for the entire visit.</p>
+                <h4 className={style.infoTitle}>Day pass</h4>
+                <p className={style.infoBody}>Entry + Free rides on all attractions. Valid for the entire visit.</p>
             </section>
-            <p>50€</p>
-            <section>
-                <label htmlFor="ticket">Tickets</label>
-                <input type="number" id="ticket" />
+            <p className={style.infoPrice}>50€</p>
+            <section className={style.ticketInputWrap}>
+                <p className={style.tickets}>Tickets</p>
+                <section className={style.ticketAmountWrap}>
+                    <button className={style.amountButtons}>-</button>
+                    <p className={style.ticketAmount}>1</p>
+                    <button className={style.amountButtons}>+</button>
+                </section>
                 <LargeButton buttonText={'Add to cart'}/>
             </section>
         </article>
