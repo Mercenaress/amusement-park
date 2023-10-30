@@ -14,7 +14,7 @@ function LandingPage() {
         </section>
         <section className={style.ferrisWheelWrap}>
             <MotionFerrisWheel 
-            animate={{rotate: 360, transition: { ease: "linear", duration: 20, repeat: Infinity}}}
+            animate={{rotate: 360, transition: { ease: "linear", duration: 25, repeat: Infinity}}}
             />
             <img className={style.ferrisBase} src={FerrisBase} alt="" />
         </section>
