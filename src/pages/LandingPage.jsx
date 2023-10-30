@@ -2,8 +2,10 @@ import FerrisWheel from "../components/FerrisWheel";
 import FerrisBase from "../assets/ferris-base.svg";
 import style from "./LandingPage.module.scss";
 import DropMenu from "../components/DropMenu";
+import { motion } from "framer-motion";
 
 function LandingPage() {
+    const MotionFerrisWheel = motion(FerrisWheel);
     return ( 
         <>
         <DropMenu/>
@@ -11,7 +13,9 @@ function LandingPage() {
             <h1 className={style.pageTitle}>Amusement Park</h1>
         </section>
         <section className={style.ferrisWheelWrap}>
-            <FerrisWheel/>
+            <MotionFerrisWheel 
+            animate={{rotate: 360, transition: { ease: "linear", duration: 20, repeat: Infinity}}}
+            />
             <img className={style.ferrisBase} src={FerrisBase} alt="" />
         </section>
         </>

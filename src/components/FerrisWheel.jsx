@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import style from "./FerrisWheel.module.scss";
 
-function FerrisWheel() {
+const FerrisWheel = forwardRef((props, ref) => {
     return ( 
         <>
-            <svg className={style.ferrisWheel} width="636" height="636" viewBox="0 0 636 636" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg ref={ref} className={style.ferrisWheel} width="636" height="636" viewBox="0 0 636 636" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="315" y="37" width="8" height="563" fill="#4C956C" stroke="#2C6E49" stroke-width="2"/>
             <rect x="430.421" y="577.041" width="8" height="563" transform="rotate(157.5 430.421 577.041)" fill="#4C956C" stroke="#2C6E49" stroke-width="2"/>
             <rect x="214.97" y="580.103" width="8" height="563" transform="rotate(-157.5 214.97 580.103)" fill="#4C956C" stroke="#2C6E49" stroke-width="2"/>
@@ -34,7 +35,7 @@ function FerrisWheel() {
             <circle cx="583.988" cy="428.65" r="28.3194" transform="rotate(-157.5 583.988 428.65)" fill="#F1C0E8" stroke="#2C6E49" stroke-width="2"/>
             </svg>
         </>
-     );
-}
+     )
+});
 
 export default FerrisWheel;
