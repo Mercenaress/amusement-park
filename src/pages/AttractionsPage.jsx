@@ -2,6 +2,7 @@ import DropMenu from "../components/DropMenu";
 import AttractionInfoCard from "../components/AttractionInfoCard";
 import AttractionInfoCardMirror from "../components/AttractionInfoCardMirror"
 import style from "./AttractionsPage.module.scss"
+import AttractionImgModal from "../components/AttractionImgModal";
 
 function AttractionsPage() {
     return ( 

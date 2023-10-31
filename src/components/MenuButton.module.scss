@@ -3,7 +3,7 @@
 .menuButton {
     @include center-flex;
     @include round-button-styles;
-    position: absolute;
+    position: fixed;
     z-index: 6;
     left: 20px;
     top: 20px;
