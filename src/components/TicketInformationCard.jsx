@@ -1,5 +1,6 @@
 import LargeButton from "./LargeButton";
 import style from "./TicketInformationCard.module.scss"
+import { motion } from "framer-motion";
 
 function TicketInformationCard() {
     return ( 
@@ -12,9 +13,15 @@ function TicketInformationCard() {
             <section className={style.ticketInputWrap}>
                 <p className={style.tickets}>Tickets</p>
                 <section className={style.ticketAmountWrap}>
-                    <button className={style.amountButtons}>-</button>
+                    <motion.button 
+                    whileHover={{ scale:1.2 }}
+                    whileTap={{scale: 1}}
+                    className={style.amountButtons}>-</motion.button>
                     <p className={style.ticketAmount}>1</p>
-                    <button className={style.amountButtons}>+</button>
+                    <motion.button 
+                    whileHover={{ scale:1.2 }}
+                    whileTap={{scale: 1}}
+                    className={style.amountButtons}>+</motion.button>
                 </section>
                 <LargeButton buttonText={'Add to cart'}/>
             </section>

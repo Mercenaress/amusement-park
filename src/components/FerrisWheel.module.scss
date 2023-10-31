@@ -1,4 +1,14 @@
 @import '../variables/Variables.scss';
 
 .ferrisWheel {
+    animation: ferrisRotation 25s linear infinite;
+}
+
+@keyframes ferrisRotation {
+    from {
+        transform: rotate(0);
+    } 
+    to {
+        transform: rotate(360deg);
+    }
 }
