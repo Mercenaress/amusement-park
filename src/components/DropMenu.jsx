@@ -1,6 +1,5 @@
 import MenuButton from "./MenuButton";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import style from './DropMenu.module.scss';
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -39,9 +38,9 @@ function DropMenu() {
             <motion.section 
             variants={menuAnimations}
             className={style.menuLinks}>
-                <motion.a variants={menuAnimations} key={1} href="/">Home</motion.a>
-                <motion.a variants={menuAnimations} key={2} href="/attractions">Attractions</motion.a>
-                <motion.a variants={menuAnimations} key={3} href="/tickets">Tickets</motion.a>
+                <motion.a variants={menuAnimations} whileHover={{ scale: 1.05 }} href="/">Home</motion.a>
+                <motion.a variants={menuAnimations} whileHover={{ scale: 1.05 }} href="/attractions">Attractions</motion.a>
+                <motion.a variants={menuAnimations} whileHover={{ scale: 1.05 }} href="/tickets">Tickets</motion.a>
             </motion.section>
         </motion.nav>
         ) : null}
