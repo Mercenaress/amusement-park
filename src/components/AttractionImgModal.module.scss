@@ -8,17 +8,17 @@
     border-radius: 50px;
 }
 
-.closeButton {
-    margin: 30px;
-    @include round-button-styles;
-    font-family: $font;
-    font-weight: 600;
-}
-
 .image {
     margin-top: 5rem;
     width: 500px;
     height: 500px;
     border: solid 5px $forestGreen;
     box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+.closeButton {
+    margin: 30px;
+    @include round-button-styles;
+    font-family: $font;
+    font-weight: 600;
 }
